@@ -54,39 +54,9 @@ function App() {
       { id: 'web-developer', label: 'Web Developer' },
       { id: 'loblaw-strategy-analyst', label: 'Loblaw Strategy Analyst' },
     ]
-    
-    const loadJobs = () => {
-      fetch(`${import.meta.env.BASE_URL}data/`)
-        .then(res => res.text())
-        .then(text => {
-          const folderMatch = text.match(/href="([^"]+)"/g)
-          const folders = new Set<string>()
-          
-          if (folderMatch) {
-            folderMatch.forEach((match: string) => {
-              const folder = match.replace(/href="|"/g, '')
-              if (folder && !folder.includes('.') && folder !== 'data/') {
-                folders.add(folder.replace('/', ''))
-              }
-            })
-          }
 
-          const jobs = Array.from(folders).map(folder => ({
-            id: folder,
-            label: folder.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
-          }))
-
-          const jobList = jobs.length > 0 ? jobs : defaultJobs
-          setAvailableJobs(jobList)
-          setJobType(jobList[0].id)
-        })
-        .catch(() => {
-          setAvailableJobs(defaultJobs)
-          setJobType('supply-chain-analyst')
-        })
-    }
-    
-    loadJobs()
+    setAvailableJobs(defaultJobs)
+    setJobType(defaultJobs[0].id)
   }, [])
 
   useEffect(() => {
