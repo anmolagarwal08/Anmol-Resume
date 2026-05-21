@@ -13,7 +13,7 @@ export default function Header({ name, title }: HeaderProps) {
           <h1 className="header-name">{name}</h1>
           <p className="header-title">{title}</p>
         </div>
-        <img src="/bestbuy-logo.svg" alt="Best Buy Logo" className="header-logo" />
+        <img src={`${import.meta.env.BASE_URL}bestbuy-logo.svg`} alt="Best Buy Logo" className="header-logo" />
       </div>
     </header>
   );
