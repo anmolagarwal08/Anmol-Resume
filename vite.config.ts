@@ -47,5 +47,6 @@ function copyDataDirectory() {
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Resume-2026/',
   plugins: [react(), copyDataPlugin],
 })
