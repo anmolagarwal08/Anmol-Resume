@@ -56,7 +56,7 @@ function App() {
     ]
     
     const loadJobs = () => {
-      fetch('/data/')
+      fetch(`${import.meta.env.BASE_URL}data/`)
         .then(res => res.text())
         .then(text => {
           const folderMatch = text.match(/href="([^"]+)"/g)
@@ -96,7 +96,7 @@ function App() {
       console.log(`Loading resume data for ${jobType}`);
       try {
         setLoading(true)
-        const basePath = `/data/${jobType}`
+        const basePath = `${import.meta.env.BASE_URL}data/${jobType}`
         
         // Load theme CSS
         const themeId = 'job-theme-style';
