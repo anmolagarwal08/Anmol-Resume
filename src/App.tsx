@@ -42,22 +42,17 @@ interface ResumeData {
   }
 }
 
+const DEFAULT_JOBS = [
+  { id: 'supply-chain-analyst', label: 'Supply Chain Analyst' },
+  { id: 'web-developer', label: 'Web Developer' },
+  { id: 'loblaw-strategy-analyst', label: 'Loblaw Strategy Analyst' },
+]
+
 function App() {
-  const [jobType, setJobType] = useState<string>('')
-  const [availableJobs, setAvailableJobs] = useState<{id: string; label: string}[]>([])
+  const [jobType, setJobType] = useState<string>(DEFAULT_JOBS[0].id)
+  const [availableJobs] = useState<{id: string; label: string}[]>(DEFAULT_JOBS)
   const [resumeData, setResumeData] = useState<ResumeData | null>(null)
   const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    const defaultJobs = [
-      { id: 'supply-chain-analyst', label: 'Supply Chain Analyst' },
-      { id: 'web-developer', label: 'Web Developer' },
-      { id: 'loblaw-strategy-analyst', label: 'Loblaw Strategy Analyst' },
-    ]
-
-    setAvailableJobs(defaultJobs)
-    setJobType(defaultJobs[0].id)
-  }, [])
 
   useEffect(() => {
     if (!jobType) return
