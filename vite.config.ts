@@ -47,6 +47,6 @@ function copyDataDirectory() {
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Resume-2026/',
+    base: '/Anmol-Resume/',
   plugins: [react(), copyDataPlugin],
 })
