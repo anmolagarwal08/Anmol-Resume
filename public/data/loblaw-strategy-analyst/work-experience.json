@@ -1,0 +1,51 @@
+{
+  "experiences": [
+    {
+      "company": "Loblaw Companies Limited",
+      "position": "Analyst - Strategy and Analytics",
+      "location": "Brampton, ON",
+      "duration": "Sep 2025 — Present",
+      "achievements": [
+        "Access data warehouses to produce complex reports, KPIs and visualizations for the business using BigQuery and SQL",
+        "Recommend and implement automation solutions using Power Automate to optimize day-to-day operations",
+        "Build and maintain scalable automation tools and data pipelines leveraging Python and cloud-based data solutions",
+        "Communicate effectively with all audiences including senior leadership in structured manner",
+        "Establish trust-based relationships with cross-functional teams to serve their analytical needs",
+        "Provide unique tools and techniques to find opportunities for improvement and implement recommendations"
+      ]
+    },
+    {
+      "company": "IKEA Canada",
+      "position": "Digital Deployment Specialist",
+      "location": "Burlington, ON",
+      "duration": "Aug 2024 — Sep 2025",
+      "achievements": [
+        "Partnered with engineering and Product teams to validate deployments, monitor system performance, and drive continuous improvement across cloud environments",
+        "Facilitated deployment of data pipelines and infrastructure by aligning cross-functional teams on objectives and timelines",
+        "Communicated project status, milestones, and outcomes to internal stakeholders translating technical work into tangible business impact"
+      ]
+    },
+    {
+      "company": "IKEA Canada",
+      "position": "Digital Shopping Experience Leader",
+      "location": "Toronto, ON",
+      "duration": "Jun 2022 — Aug 2024",
+      "achievements": [
+        "Managed project workflows and updated roadmap for digital initiatives tracking progress using Jira",
+        "Worked with Point of Sales systems to align with compliance and provide clear technical requirements",
+        "Developed dashboards and reports to track KPIs and measure success of digital initiatives"
+      ]
+    },
+    {
+      "company": "GoldGriffin Inc.",
+      "position": "Junior Web Developer",
+      "location": "Pune, India",
+      "duration": "May 2021 — Jan 2022",
+      "achievements": [
+        "Responsible for writing back-end and front-end code for web applications using Python, HTML5, CSS, JavaScript",
+        "Resolved ongoing problems and documented project progress accurately",
+        "Collaborated with internal teams to convert end user feedback into meaningful solutions"
+      ]
+    }
+  ]
+}

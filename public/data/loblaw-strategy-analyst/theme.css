@@ -1,0 +1,180 @@
+:root {
+  /* Loblaw Brand Colors */
+  --loblaw-red: #E31837;
+  --loblaw-blue: #00467F;
+  --text-main: #333333;
+  --text-h: #1A1A1A;
+  --text-muted: #666666;
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F9F9F9;
+  --border-color: #EDEDED;
+  --border-radius: 4px;
+
+  /* Global variables for components */
+  --text: var(--text-main);
+  --bg: var(--bg-primary);
+  --accent: var(--loblaw-red);
+  --accent-hover: #C6152E;
+  --accent-bg: rgba(227, 24, 55, 0.05);
+  --header-bg: var(--loblaw-blue);
+  --header-text: #ffffff;
+  --link: var(--loblaw-blue);
+  --link-hover: #00335D;
+  
+  /* Tag/Skill colors */
+  --tag-bg: #F2F2F2;
+  --tag-text: var(--loblaw-blue);
+  --tag-border: var(--border-color);
+
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: var(--bg-secondary);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.resume-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: var(--bg-primary);
+  padding: 60px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border-radius: var(--border-radius);
+}
+
+/* Header Styling */
+.header {
+  text-align: left !important;
+  padding: 0 0 30px 0 !important;
+  border-bottom: 5px solid var(--loblaw-blue) !important;
+  margin-bottom: 30px !important;
+}
+
+.header-name {
+  color: var(--loblaw-blue) !important;
+  font-size: 3rem !important;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.header-title {
+  color: var(--loblaw-red) !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  margin-top: 5px !important;
+}
+
+/* Contacts Styling */
+.contacts {
+  display: flex !important;
+  justify-content: flex-start !important;
+  gap: 30px !important;
+  margin-bottom: 40px !important;
+  padding: 15px 0 !important;
+  background-color: transparent !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  border-radius: 0 !important;
+}
+
+.contact-item {
+  color: var(--text-muted) !important;
+}
+
+.contact-item a {
+  color: var(--loblaw-blue) !important;
+  font-weight: 600 !important;
+}
+
+/* Section Titles */
+.summary-title, .skills-title, .experience-title, .education-title {
+  color: var(--loblaw-blue) !important;
+  border-bottom: 3px solid var(--loblaw-red) !important;
+  padding-bottom: 8px !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.6rem !important;
+  margin-bottom: 25px !important;
+  font-weight: 800 !important;
+}
+
+/* Professional Summary */
+.professional-summary {
+  background-color: var(--accent-bg) !important;
+  border-left: 6px solid var(--loblaw-blue) !important;
+  padding: 25px !important;
+  margin-bottom: 40px !important;
+}
+
+.summary-text {
+  color: var(--text-main) !important;
+}
+
+/* Skills Styling */
+.skill-group {
+  background-color: var(--bg-secondary) !important;
+  border-left: 4px solid var(--loblaw-red) !important;
+  border-radius: var(--border-radius) !important;
+}
+
+.skill-category {
+  color: var(--loblaw-blue) !important;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+  font-size: 1.1rem !important;
+}
+
+.skill-item:before {
+  color: var(--loblaw-red) !important;
+}
+
+/* Work Experience */
+.experience-item {
+  border-left: 4px solid var(--loblaw-blue) !important;
+  margin-bottom: 30px !important;
+}
+
+.position {
+  color: var(--loblaw-blue) !important;
+  font-weight: 700 !important;
+}
+
+.company {
+  color: var(--loblaw-red) !important;
+  font-weight: 700 !important;
+}
+
+.achievement:before {
+  color: var(--loblaw-red) !important;
+}
+
+/* Education */
+.education-item {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.education-item:hover {
+  border-color: var(--loblaw-red) !important;
+  box-shadow: 0 4px 12px rgba(227, 24, 55, 0.1) !important;
+}
+
+.degree {
+  color: var(--loblaw-blue) !important;
+}
+
+/* Print Styles */
+@media print {
+  .resume-container {
+    margin: 0;
+    padding: 20px;
+    box-shadow: none;
+    max-width: 100%;
+  }
+  
+  .job-selector {
+    display: none;
+  }
+}

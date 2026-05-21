@@ -1,0 +1,24 @@
+{
+  "skills": [
+    {
+      "category": "MS Office",
+      "items": ["Excel", "PowerPoint", "Word"]
+    },
+    {
+      "category": "Power Platform",
+      "items": ["Power BI", "Power Automate", "Power Apps"]
+    },
+    {
+      "category": "Programming",
+      "items": ["Python", "Pandas", "NumPy", "VBA"]
+    },
+    {
+      "category": "Data & Analytics",
+      "items": ["SQL", "BigQuery", "ETL", "Data Visualization", "Machine Learning", "Dashboard Development"]
+    },
+    {
+      "category": "AI & Automation",
+      "items": ["GPT APIs", "AutoML", "Automation Solutions", "Pipeline Development"]
+    }
+  ]
+}

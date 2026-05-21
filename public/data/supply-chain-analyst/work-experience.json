@@ -1,0 +1,48 @@
+{
+  "experiences": [
+    {
+      "company": "IKEA",
+      "position": "Digital Deployment Specialist",
+      "location": "Burlington",
+      "duration": "Sep 2025 — Present",
+      "achievements": [
+        "Partnered with engineering and Product teams to validate deployments, monitor system performance, and drive continuous improvement across cloud environments.",
+        "Facilitated deployment of data pipelines and infrastructure by aligning cross-functional teams on objectives and timelines, ensuring clarity on success metrics.",
+        "Communicated project status, milestones, and outcomes to internal stakeholders, translating technical work into tangible business impact to facilitate informed decision-making."
+      ]
+    },
+    {
+      "company": "IKEA",
+      "position": "Digital Shopping Experience Leader",
+      "location": "Toronto",
+      "duration": "Aug 2024 — Sep 2025",
+      "achievements": [
+        "Managed project workflows and updated the roadmap for digital initiatives for the GTA market, tracking progress and balancing competing priorities using Jira to ensure timely delivery.",
+        "Worked with Point of Sales systems to align with compliance and provide clear technical requirements.",
+        "Communicated project status, milestones, and outcomes to internal stakeholders, translating technical work into tangible business impact to facilitate informed decision-making."
+      ]
+    },
+    {
+      "company": "IKEA",
+      "position": "Analyst, Fulfillment Integration",
+      "location": "Toronto",
+      "duration": "Jun 2022 — Sep 2024",
+      "achievements": [
+        "Managed the intake and prioritization of data requests to optimize supply chain fulfillment, inventory tracking, and product listing accuracy",
+        "Partnered with cross-functional teams between Sales and Fulfillment to conduct regular audits, validate data models and monitor performance of fulfillment integrations, supporting continuous improvement in operational efficiency",
+        "Developed training materials for staff on integration processes, tools and system data entry protocols"
+      ]
+    },
+    {
+      "company": "GoldGriffin Inc.",
+      "position": "Junior Web Developer",
+      "location": "Pune, India",
+      "duration": "May 2021 — Jan 2022",
+      "achievements": [
+        "Responsible for writing back-end and front-end code for a web application using Python, HTML5, CSS, JavaScript, JQuery and Django Framework.",
+        "Resolved ongoing problems and documented project progress accurately.",
+        "Collaborated with internal teams to convert end user feedback into meaningful and improved solutions."
+      ]
+    }
+  ]
+}

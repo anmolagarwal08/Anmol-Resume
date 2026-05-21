@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 100" width="140" height="50">
+  <!-- Blue background -->
+  <rect width="200" height="100" fill="#0046B4"/>
+  
+  <!-- BEST BUY white text -->
+  <text x="15" y="35" font-size="24" font-weight="bold" fill="#FFFFFF" font-family="Arial, sans-serif">BEST</text>
+  <text x="15" y="60" font-size="24" font-weight="bold" fill="#FFFFFF" font-family="Arial, sans-serif">BUY</text>
+  
+  <!-- Yellow square -->
+  <rect x="210" y="15" width="55" height="70" fill="#FFD600"/>
+  
+  <!-- 25 text in yellow square -->
+  <text x="237.5" y="62" font-size="40" font-weight="bold" fill="#0046B4" text-anchor="middle" font-family="Arial, sans-serif">25</text>
+</svg>
