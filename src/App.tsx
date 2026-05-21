@@ -48,11 +48,35 @@ const DEFAULT_JOBS = [
   { id: 'loblaw-strategy-analyst', label: 'Loblaw Strategy Analyst' },
 ]
 
+const JOB_ALIASES: Record<string, string> = {
+  'strategy-and-analytics': 'loblaw-strategy-analyst',
+}
+
+function readJobFromQuery(): string | null {
+  const search = globalThis.location.search.replace(/^\?/, '')
+  if (!search) return null
+  // Accept ?job=xxx, ?xxx, or ?=xxx
+  const params = new URLSearchParams(search)
+  const candidates = [
+    params.get('job'),
+    params.get(''),
+    ...Array.from(params.keys()).filter(k => k && !params.get(k)),
+  ].filter((v): v is string => !!v)
+  for (const raw of candidates) {
+    const id = JOB_ALIASES[raw] ?? raw
+    if (DEFAULT_JOBS.some(j => j.id === id)) return id
+  }
+  return null
+}
+
+const QUERY_JOB = readJobFromQuery()
+
 function App() {
-  const [jobType, setJobType] = useState<string>(DEFAULT_JOBS[0].id)
+  const [jobType, setJobType] = useState<string>(QUERY_JOB ?? DEFAULT_JOBS[0].id)
   const [availableJobs] = useState<{id: string; label: string}[]>(DEFAULT_JOBS)
   const [resumeData, setResumeData] = useState<ResumeData | null>(null)
   const [loading, setLoading] = useState(true)
+  const hasQueryJob = QUERY_JOB !== null
 
   useEffect(() => {
     if (!jobType) return
@@ -108,18 +132,20 @@ function App() {
   return (
     <>
       <div className="resume-container">
-        <div className="job-selector">
-          <label htmlFor="job-type">Select Job Type:</label>
-          <select 
-            id="job-type"
-            value={jobType} 
-            onChange={(e) => setJobType(e.target.value)}
-          >
-            {availableJobs.map(job => (
-              <option key={job.id} value={job.id}>{job.label}</option>
-            ))}
-          </select>
-        </div>
+        {!hasQueryJob && (
+          <div className="job-selector">
+            <label htmlFor="job-type">Select Job Type:</label>
+            <select
+              id="job-type"
+              value={jobType}
+              onChange={(e) => setJobType(e.target.value)}
+            >
+              {availableJobs.map(job => (
+                <option key={job.id} value={job.id}>{job.label}</option>
+              ))}
+            </select>
+          </div>
+        )}
 
         <Header 
           name={resumeData.contacts.name} 
